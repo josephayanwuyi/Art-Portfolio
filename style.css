@@ -1,0 +1,559 @@
+* {
+  box-sizing: border-box;
+}
+/*
+=========
+Side-Profiles and Navigation
+=========
+*/
+.sidebar {
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 3;
+  overflow: auto;
+  padding-top: 15px;
+}
+.author {
+  padding: 0.01em 16px;
+}
+.author img {
+  width: 100%;
+  max-width: 180px;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+.navbar a {
+  padding: 8px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+}
+.navbar a:hover {
+  background-color: #f2f2f2;
+  color: rebeccapurple;
+}
+.icon-bar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+}
+.icon-bar a {
+  padding: 10px;
+  font-size: 30px;
+}
+.icon-bar a:hover {
+  background-color: #ddd;
+}
+
+/*
+==================
+Responsive Sidebar
+==================
+*/
+@media screen and (max-width: 992px) {
+  .sidebar {
+    display: none;
+    padding: 0;
+  }
+  .main-container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+  }
+  .column {
+    width: 100% !important;
+  }
+  .row {
+    margin: 5px;
+  }
+  .row,
+  .row > .column {
+    margin: 0;
+    padding: 0 !important;
+  }
+  .content {
+    padding: 2px !important;
+  }
+  .topbar {
+    padding: 2px !important;
+  }
+}
+
+/*
+==========
+Sidebar
+==========
+*/
+.sidenav2 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav2 a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav2 a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav2 .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav2 {
+    padding-top: 15px;
+  }
+  .sidenav2 a {
+    font-size: 18px;
+  }
+}
+/*
+==========
+Main Container
+========== */
+.main-container {
+  background-color: #f1f1f1;
+  padding: 2px;
+}
+.main-container h1 {
+  padding: 1rem;
+  font-size: 3rem;
+  margin: 0;
+}
+#myBtnContainer {
+  margin-left: 20px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+/*
+==========
+Pagination
+==========
+*/
+.center {
+  text-align: center;
+  margin: 1rem 0;
+}
+.sm {
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 20px;
+  background-color: #666;
+  padding: 10px 20px;
+  color: white;
+}
+.sm:hover {
+  color: #666;
+  background-color: #000000;
+}
+/*
+========
+Profile
+========
+*/
+.profile {
+  background-color: #ddd;
+  padding: 2rem;
+}
+.profile img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  border-radius: 50px;
+}
+@media screen and (max-width: 992px) {
+  .profile {
+    padding: 1rem;
+  }
+  .profile img {
+    width: 80%;
+  }
+  #myBtnContainer {
+    margin-left: 2px;
+  }
+}
+/*
+===========
+Skill Bar
+===========
+*/
+.container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 50px;
+  height: 20px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.painting {
+  width: 90%;
+  background-color: #4caf50;
+  border-radius: 50px;
+  height: 20px;
+}
+.sculpture {
+  width: 80%;
+  background-color: #2196f3;
+  border-radius: 50px;
+  height: 20px;
+}
+.music {
+  width: 65%;
+  background-color: #f44336;
+  border-radius: 50px;
+  height: 20px;
+}
+.writing {
+  width: 60%;
+  background-color: #808080;
+  border-radius: 50px;
+  height: 20px;
+}
+/*
+========
+TopBar
+=======
+*/
+.topbar {
+  padding: 15px;
+}
+.topbar div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (min-width: 992px) {
+  .topbar {
+    display: none;
+  }
+}
+span img {
+  width: 65px;
+  border-radius: 50%;
+}
+/*
+===========
+Myslide
+==========
+*/
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author2 {
+  color: cornflowerblue;
+}
+
+/*
+==================
+Moveable BLog Name
+==================
+*/
+marquee {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  line-height: 1.42857143;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #000000;
+  font-size: 36px;
+  display: inline-block;
+  overflow: hidden;
+  text-align: initial;
+  white-space: nowrap;
+  color: #0a1d8d;
+  box-sizing: border-box;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #0a1d8d;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/*
+==========
+Cont Form
+=========
+*/
+/* Style inputs with type="text", select elements and textareas */
+/* Add a background color and some padding around the form */
+.body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+padding: 20px;
+  font-family: "Raleway", sans-serif;
+  background-color: #627b8a;
+}
+.form-container {
+  width: 1000px;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  padding: 2em;
+  background-color: #fff;
+}
+.form-group {
+  margin-bottom: 1.5em;
+  transition: all 0.3s;
+}
+.form-label {
+  font-size: 0.75em;
+  color: var(--font-color);
+  display: block;
+  opacity: 0;
+  transition: all 0.3s;
+  transform: translateX(-50px);
+}
+.form-control {
+  box-shadow: none;
+  border-radius: 0;
+  border-color: #ccc;
+  border-style: none none solid none;
+  width: 100%;
+  font-size: 1.25em;
+  transition: all 0.6s;
+}
+.form-control::placeholder {
+  color: #aaa;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--font-hover-color);
+  outline: none;
+}
+.form-group:focus-within {
+  transform: scale(1.02);
+}
+
+.form-control:invalid:focus {
+  border-color: red;
+}
+.form-control:valid:focus {
+  border-color: green;
+}
+
+.submit-btn {
+  background: 0 0 #fff;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  color: var(--font-color);
+  font-size: 1em;
+  padding: 10px 50px;
+  text-transform: uppercase;
+}
+.submit-btn:hover {
+  border-color: var(--font-hover-color);
+  color: var(--font-hover-color);
+}
+textarea {
+  resize: none;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  background-color: #000000;
+  color: white;
+}
+
+#loader{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0px;
+    left:0px;
+    background: rgb(0, 0, 0);
+    display:none;
+}
