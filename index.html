@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home || Micheal Soji</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Global/Normalize CSS -->
+  <link rel="stylesheet" href="normalize.css" />
+  <!-- CSS -->
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- Cookie JavaScript -->
+  <script src="cookie.js"></script>
+</head>
+
+<body id="main" onload="checkCookie()">
+  <!-- Sidebar-Profile and Link -->
+  <div class="sidebar" id="sidebar">
+    <div class="author">
+      <img src="./img/MICHAEL_PROFILE_PICS.jpg" alt="MICHAEL_PROFILE_PICS" />
+      <h3>ALADE MICHAEL ADESOJI</h3>
+      <p>Welcome to Micheal Soji Portfolio.</p>
+    </div>
+    <div class="navbar">
+      <a href="#">HOME</a>
+      <a href="#">ABOUT ME</a>
+      <a href="#">CONTACT</a>
+      <a href="#">BLOG</a>
+    </div>
+    <div class="icon-bar">
+      <a href="https://www.facebook.com/micheal.soji.509" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/search/top/?q=micheal%20soji%20art%20and%20music%20productions"
+        target="_blank"><i class="fab fa-google"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="
+      https://api.whatsapp.com/send?phone=%2B2348106001765&text&app_absent=0
+api.whatsapp.com
+Write to Micheal Soji
+      " target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div id="mySidenav" class="sidenav2">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+
+  <!-- Main-content -->
+  <div class="main-container" id="container" style="margin-left:300px;overflow-y: hidden;">
+    <div style="text-align: center;">
+      <marquee behavior="alternate">Micheal Soji Art & Music</marquee>
+    </div>
+    <div class="topbar">
+      <div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <span><img src="./img/MICHAEL_PROFILE_PICS.jpg" alt="MICHAEL_PROFILE_PICS" /></span>
+      </div>
+    </div>
+
+    <!-- All Portfolio Gallery -->
+    <div>
+      <!-- Filter Button -->
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('nature')">Painting</button>
+        <button class="btn" onclick="filterSelection('cars')"> Nature</button>
+        <button class="btn" onclick="filterSelection('people')"> People</button>
+      </div>
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column nature">
+          <div class="content">
+            <img src="./img/MICHAELSOJI-ARTWORK5.jpg" alt="MICHAELSOJI-ARTWORK" style="width:100%" />
+          </div>
+        </div>
+        <div class="column nature">
+          <div class="content">
+            <img src="./img/MICHAELSOJI-ARTWORK5.jpg" alt="MICHAELSOJI-ARTWORK" style="width:100%" />
+          </div>
+        </div>
+        <div class="column nature">
+          <div class="content">
+            <img src="./img/MICHAELSOJI-ARTWORK4.jpg" alt="MICHAELSOJI-ARTWORK" style="width:100%" />
+          </div>
+        </div>
+
+        <div class="column cars">
+          <div class="content">
+            <img src="./img/MICHAELSOJI-ARTWORK5.jpg" alt="MICHAELSOJI-ARTWORK" style="width:100%">
+          </div>
+        </div>
+        <div class="column cars">
+          <div class="content">
+            <img src="./img/MICHAELSOJI-ARTWORK6.png" alt="MICHAELSOJI-ARTWORK" style="max-width:100%">
+          </div>
+        </div>
+        <div class="column cars">
+          <div class="content">
+            <img src="./img/MICHAELSOJI-ARTWORK6.png" alt="MICHAELSOJI-ARTWORK" style="width:100%" />
+          </div>
+        </div>
+        <!-- 
+        <div class="column people">
+          <div class="content">
+            <img src="MICHAELSOJI-ARTWORK5.jpg" alt="MICHAELSOJI-ARTWORK" style="width:100%" />
+          </div>
+        </div>
+        <div class="column people">
+          <div class="content">
+            <img src="MICHAELSOJI-ARTWORK6.png" alt="MICHAELSOJI-ARTWORK" style="width:100%" />
+          </div>
+        </div>
+        <div class="column people">
+          <div class="content">
+            <img src="MICHAELSOJI-ARTWORK6.png" alt="MICHAELSOJI-ARTWORK" style="width:100%" />
+          </div>
+        </div>-->
+        <!-- END GRID -->
+      </div>
+      <div class="center">
+        <a href="./image/index.html" class="sm">See More &rarr;</a>
+      </div>
+
+      <!-- END MAIN -->
+    </div>
+    <!-- Profile -->
+    <div class="profile">
+      <img src="./img/MICHAEL_PROFILE_PICS.jpg" alt="MICHAEL_SOJI" />
+      <h2 style="text-align: center;">About Me.</h2>
+      <p>
+        This blog is organized/meant to let people know more about art in unique medium.This group aims at gearing the
+        horizon and appreciation level of the general public. "We add value and joy to you".
+      </p>
+      <div>
+        <h1>My Technical skills</h1>
+        <p>Painting</p>
+        <div class="container">
+          <div class="skills painting"></div>
+        </div>
+
+        <p>Drawing</p>
+        <div class="container">
+          <div class="skills sculpture"></div>
+        </div>
+
+        <p>Music</p>
+        <div class="container">
+          <div class="skills music"></div>
+        </div>
+
+        <p>Writing</p>
+        <div class="container">
+          <div class="skills writing"></div>
+        </div>
+      </div>
+    </div>
+    <!-- SlideShow -->
+    <div class="slideshow-container">
+      <!-- Full-width slides/quotes -->
+      <div class="mySlides">
+        <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+        <p class="author2">- John Keats</p>
+      </div>
+
+      <div class="mySlides">
+        <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+        <p class="author2">- Ernest Hemingway</p>
+      </div>
+
+      <div class="mySlides">
+        <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+        <p class="author2">- Thomas A. Edison</p>
+      </div>
+
+      <!-- Next/prev buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Dots/bullets/indicators -->
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- Pricing Table -->
+    <div class="row">
+      <div class="column">
+        <ul class="price">
+          <li class="header">Basic</li>
+          <li class="grey">$ 2 / hour</li>
+          <li>Painting</li>
+          <li>Drawing</li>
+          <li>Play Piano</li>
+          <li>Writing</li>
+          <li class="grey"><a href="#" class="button">Sign Up Basic</a></li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <ul class="price">
+          <li class="header" style="background-color: rgb(7, 25, 128)">Pro</li>
+          <li class="grey">$ 5 / hour</li>
+          <li>Painting</li>
+          <li>Drawing</li>
+          <li>Play Piano</li>
+          <li>Writing</li>
+          <li class="grey"><a href="#" class="button">Sign Up Pro</a></li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <ul class="price">
+          <li class="header">Premium</li>
+          <li class="grey">$ 20 / hour</li>
+          <li>Painting</li>
+          <li>Drawing</li>
+          <li>Play Piano</li>
+          <li>Writing</li>
+          <li class="grey"><a href="#" class="button">Sign Up Premium</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="body-container">
+      <div class="form-container">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+          (function () {
+            emailjs.init('M9EEtFgVD9XTY0prI');
+          })();
+        </script>
+        <script type="text/javascript">
+          window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+              event.preventDefault();
+              // generate a five digit number for the contact_number variable
+              this.contact_number.value = Math.random() * 100000 | 0;
+              // these IDs from the previous steps
+              emailjs.sendForm('service_iwq5ycm', 'template_tnol2aa', this)
+                .then(function () {
+                  document.getElementById("loader").style.display = "flex";
+                }, function (error) {
+                  alert("FAILED...", error);
+                });
+            });
+          }
+        </script>
+        <h1>Contact Form</h1>
+        <form method="POST" class="form" id="contact-form">
+          <input type="hidden" name="contact_number" value="67426">
+          <div class="form-group">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" name="user_name" placeholder="Jane Doe" tabindex="1" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" name="user_email" placeholder="jane@doe.com"
+              tabindex="2" required>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Enter Message..."
+              tabindex="4"></textarea>
+          </div>
+          <div>
+            <input type="submit" class="submit-btn" value="Send Message">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- loader -->
+    <div id="loader">
+      <img src="https://media.giphy.com/media/MEiZ5h8lOkM7rwideE/giphy.gif" alt="" />
+    </div>
+
+    <div class="footer">&copy; 2022. Copyright at <a href="index.html"> Micheal Soji</a>. Developed by: <a href="#"
+        target="_blank">The Pep</a>.</div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
