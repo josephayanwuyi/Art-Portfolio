@@ -544,7 +544,7 @@ textarea {
   color: white;
 }
 
-#loader{
+.loader{
     display:flex;
     align-items: center;
     justify-content: center;
