@@ -257,18 +257,13 @@ Write to Micheal Soji
             <input type="submit" class="submit-btn submit" value="Send Message" id="contact-submit"
               data-submit="...Sending">
           </div>
-        </form>
-      </div>
-    </div>
-
-    <!-- loader -->
+          
+           <!-- loader -->
     <div class="loader">
       <img src="https://media.giphy.com/media/MEiZ5h8lOkM7rwideE/giphy.gif" alt="" />
     </div>
-
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
+          
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript">
       // User ID
@@ -281,13 +276,13 @@ Write to Micheal Soji
         emailjs.init("Madvu3XmobS4VHm8d");
       })();
  
-      
+      /**
             emailjs.send("service_jc0gzvm", "template_zdzwl3u", {
               to_name: "USERNAME",
               from_name: "FROM NAME",
               message: "MESSAGE",
             });
-   
+   **/
       
       function validate() {
         let loader = document.querySelector(".loader");
@@ -341,7 +336,10 @@ Write to Micheal Soji
         });
       }
     </script>
-
+        </form>
+      </div>
+    </div>
+    
     <div class="footer">&copy; 2022. Copyright at <a href="index.html"> Micheal Soji</a>. Developed by: <a href="#"
         target="_blank">The Pep</a>.</div>
   </div>
